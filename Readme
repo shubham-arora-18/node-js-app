@@ -1,0 +1,9 @@
+Description: Simple HelloWorld Node.js app on Docker. Port 4000. Route /  .
+
+1. Install node.
+2. Run command: npm install .(Installs node dependencies)
+3. To run project locally run command: npm start  .
+4. Or To run project locally run command: node app.js  .
+5. To build docker file run command: docker build . -t node-web-app  .Note - make sure docker is installed.
+6. To check if docker image was create run: docker images   .
+7. To run docker image locally, run: docker run -it -p 4000:3000 node-web-app    . Note 4000 can be replaced by anyport you like. But since app runs on 3000 post inside container, that cannot be changed.
