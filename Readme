@@ -7,3 +7,5 @@ Description: Simple HelloWorld Node.js app on Docker. Port 4000. Route /  .
 5. To build docker file run command: docker build . -t node-web-app  .Note - make sure docker is installed.
 6. To check if docker image was create run: docker images   .
 7. To run docker image locally, run: docker run -it -p 4000:3000 node-web-app    . Note 4000 can be replaced by anyport you like. But since app runs on 3000 post inside container, that cannot be changed.
+
+Docker Image URL: https://hub.docker.com/layers/warkahot/node-web-app/latest/images/sha256-d8b4af68e85b3ea5105c473d9e842354f00242c7cbfe231c5003483c82fa3a8b?context=repo
