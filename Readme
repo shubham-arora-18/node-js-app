@@ -1,11 +1,18 @@
-Description: Simple HelloWorld Node.js app on Docker. Port 4000. Route /  .
+Description: Create a simple Node.js, Hello World project. Dockerize it. Push the docker image on docker hub.
 
-1. Install node.
-2. Run command: npm install .(Installs node dependencies)
-3. To run project locally run command: npm start  .
-4. Or To run project locally run command: node app.js  .
-5. To build docker file run command: docker build . -t node-web-app  .Note - make sure docker is installed.
-6. To check if docker image was create run: docker images   .
-7. To run docker image locally, run: docker run -it -p 4000:3000 node-web-app    . Note 4000 can be replaced by anyport you like. But since app runs on 3000 post inside container, that cannot be changed.
+Prequisites: Install Docker and Node.
 
+Steps:
+1. Run command: npm install .(Installs node dependencies)
+2. To run project locally run command: npm start  .
+3. Or To run project locally run command: node app.js  .
+4. To build docker file run command: docker build . -t node-web-app  .
+5. To check if docker image was created, run: docker images   .
+6. To run docker image locally, run: docker run -it -p 4000:3000 node-web-app    .Test it on the browser on localhost:4000. Note: 4000 can be replaced by anyport you like. But since app runs on 3000 port inside container, that cannot be changed.
+7. Create account on DockerHub.
+8. Create repository on docker hub. 
+9. Delete old image. Create a new docker image again with name: <account_name>:<image_name>.
+10. Push docker image on your docker hub using command: docker push <account_name>:<image_name>
+
+Note: Uploaded ready to use docker image for this project on my Docker Hub account. 
 Docker Image URL: https://hub.docker.com/layers/warkahot/node-web-app/latest/images/sha256-d8b4af68e85b3ea5105c473d9e842354f00242c7cbfe231c5003483c82fa3a8b?context=repo
